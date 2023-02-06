@@ -1,0 +1,53 @@
+graph phylogenetic_tree 
+{
+	layout=neato
+	label="Phylogenetic Tree from: Book1.csv"
+	mode=major
+	model=shortpath
+	size=""
+	ratio=fill
+	orientation=portrait
+
+#0
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="frog", fontcolor="#000000"] frog}
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="salamander", fontcolor="#000000"] salamander}
+	{node [xlabel="0",width="0,3",height="0,3",shape="diamond",style="rounded",color="#006400",label="0", fontcolor="#006400"] frog_salamander}
+	{edge [color="#000000",style="solid",label="",dir="forward"] frog -- frog_salamander}
+	{edge [color="#000000",style="solid",label="",dir="forward"] salamander -- frog_salamander}
+#1
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="lizard", fontcolor="#000000"] lizard}
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="snake", fontcolor="#000000"] snake}
+	{node [xlabel="0.077",width="0,3",height="0,3",shape="diamond",style="rounded",color="#006400",label="1", fontcolor="#006400"] lizard_snake}
+	{edge [color="#000000",style="solid",label="",dir="forward"] lizard -- lizard_snake}
+	{edge [color="#000000",style="solid",label="",dir="forward"] snake -- lizard_snake}
+#2
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="turtle", fontcolor="#000000"] turtle}
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="mammal", fontcolor="#000000"] mammal}
+	{node [xlabel="0.231",width="0,3",height="0,3",shape="diamond",style="rounded",color="#006400",label="2", fontcolor="#006400"] turtle_mammal}
+	{edge [color="#000000",style="solid",label="",dir="forward"] turtle -- turtle_mammal}
+	{edge [color="#000000",style="solid",label="",dir="forward"] mammal -- turtle_mammal}
+#3
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="crocodile", fontcolor="#000000"] crocodile}
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="bird", fontcolor="#000000"] bird}
+	{node [xlabel="0.231",width="0,3",height="0,3",shape="diamond",style="rounded",color="#006400",label="3", fontcolor="#006400"] crocodile_bird}
+	{edge [color="#000000",style="solid",label="",dir="forward"] crocodile -- crocodile_bird}
+	{edge [color="#000000",style="solid",label="",dir="forward"] bird -- crocodile_bird}
+#4
+	{node [xlabel="0.308",width="0,3",height="0,3",shape="diamond",style="",color="#00bfff",label="4", fontcolor="#00bfff"] frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] frog_salamander -- frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] turtle_mammal -- frog_salamander_turtle_mammal}
+#5
+	{node [xlabel="",width="0,3",height="0,3",shape="octagon",style="filled",color="skyblue",label="rayfinfish", fontcolor="#000000"] rayfinfish}
+	{node [xlabel="0.42325",width="0,3",height="0,3",shape="diamond",style="rounded",color="#006400",label="5", fontcolor="#006400"] rayfinfish_frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="solid",label="",dir="forward"] rayfinfish -- rayfinfish_frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] frog_salamander_turtle_mammal -- rayfinfish_frog_salamander_turtle_mammal}
+#6
+	{node [xlabel="0.519125",width="0,3",height="0,3",shape="diamond",style="",color="#00bfff",label="6", fontcolor="#00bfff"] lizard_snake_rayfinfish_frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] lizard_snake -- lizard_snake_rayfinfish_frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] rayfinfish_frog_salamander_turtle_mammal -- lizard_snake_rayfinfish_frog_salamander_turtle_mammal}
+#7
+	{node [xlabel="0.5744375",width="0,3",height="0,3",shape="diamond",style="diagonals",color="#8B0000",label="7", fontcolor="#8B0000"] crocodile_bird_lizard_snake_rayfinfish_frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] crocodile_bird -- crocodile_bird_lizard_snake_rayfinfish_frog_salamander_turtle_mammal}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] lizard_snake_rayfinfish_frog_salamander_turtle_mammal -- crocodile_bird_lizard_snake_rayfinfish_frog_salamander_turtle_mammal}
+
+}

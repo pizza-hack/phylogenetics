@@ -1,0 +1,9 @@
+rayfinfish;frog;turtle;salamander;crocodile;lizard;bird;mammal;snake;
+frog_salamander=0
+lizard_snake=0,077
+turtle_mammal=0,231
+crocodile_bird=0,231
+frog^salamander_turtle^mammal=0,308
+rayfinfish_frog^salamander^turtle^mammal=0,42325
+lizard^snake_rayfinfish^frog^salamander^turtle^mammal=0,519125
+crocodile^bird_lizard^snake^rayfinfish^frog^salamander^turtle^mammal=0,5744375

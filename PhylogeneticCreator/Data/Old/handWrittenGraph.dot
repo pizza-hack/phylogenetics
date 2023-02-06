@@ -1,0 +1,41 @@
+graph linealMean
+{
+	layout=neato;
+	mode="major"
+	model=shortpath
+	label="Phylogenetic tree from Book1.csv";
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] frog}
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] salamander}
+	{node [width=.3,height=.3,shape=box,color=skyblue] 1};
+	frog  -- 1 [dir=forward];
+	salamander -- 1 [dir=forward]
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] lizard}
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] snake}
+	{node [width=.3,height=.3,shape=box,color=skyblue] 2}
+	lizard -- 2 [dir=forward]
+	snake -- 2 [dir=forward]
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] turtle};
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] mammal};
+	{node [width=.3,height=.3,shape=box,color=skyblue] 3};
+	turtle -- 3 [dir=forward]
+	mammal -- 3 [dir=forward]
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] crocodile};
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] bird};
+	{node [width=.3,height=.3,shape=box,color=skyblue] 4};
+	crocodile -- 4 [dir=forward]
+	bird -- 4 [dir=forward]
+	{node [width=.3,height=.3,shape=diamond,color=skyblue] 5};
+	1 -- 5 [dir=forward, style=dashed]
+	3 -- 5 [dir=forward, style=dashed]
+	{node [width=.3,height=.3,shape=octagon,style=filled,color=skyblue] rayfinfish};
+	{node [width=.3,height=.3,shape=diamond,color=skyblue] 6};
+	rayfinfish -- 6 [dir=forward]
+	5 -- 6 [dir=forward, style=dashed]
+	{node [width=.3,height=.3,shape=diamond,color=skyblue] 7};
+	2 -- 7 [dir=forward, style=dashed]
+	6 -- 7 [dir=forward, style=dashed]
+# hex value for skyblue is #87CEEB
+	{node [width=.3,height=.3,shape=diamond,style=filled, color="#90EE90"] 8};
+	4 -- 8 [dir=forward, style=dashed]
+	7 -- 8 [dir=forward, style=dashed]
+}

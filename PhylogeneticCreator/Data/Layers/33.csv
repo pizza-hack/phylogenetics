@@ -1,0 +1,14 @@
+;Human;Dog;DaimonDelta;DaimonGamma;DaimonZeta;Ichthyos;Larva;Teuthus;TrailerBeta;Vermis;DaimonBladeLauncher^DaimonEta^DaimonEtaLaser^DaimonEtaProjectile^DaimonKnight^DaimonLightning^DaimonLightningLase^DaimonLightningSpik^DaimonMobulaProject^DaimonMobulaLaser^DaimonMobulaBolt^DaimonMobulaBlade^DaimonObstacle^DaimonObstacleBolt^DaimonObstacleLaser^DaimonObstacleMissi^DaimonObstacleProje^DaimonObstacleSpike^DaimonSpike^DaimonSwarm^DaimonTrial^DaimonTurretBlade^DaimonTurretLaser^DaimonTurretMissile^DaimonTurretProject^DroneAlpha^DroneAlphaLaser^DroneAlphaSpike^DroneBeta^TrailerAlpha^WingAlpha^DaimonAlpha^DaimonBlade;DaimonBeta^DaimonEpsilon;DaimonTurretCompoun^VermisChild;
+Human;0;1;1;1;1;0,925;0,675;1;0,675;0,5957895;0,484375;0,7583333;0,53333336;
+Dog;1;0;1;1;1;0,9333333;0,6933333;1;0,6933333;0,5452632;0,48250002;0,75;0,5411111;
+DaimonDelta;1;1;0;1;1;0,8;0,5833334;1;0,5833334;0,5952632;0,47500002;0,7333333;0,5552083;
+DaimonGamma;1;1;1;0;1;0,7666667;0,5333334;1;0,5333334;0,6936842;0,46249998;0,8;0,61875;
+DaimonZeta;1;1;1;1;0;0,9200001;0,7133334;1;0,7133334;0,5936843;0,47500002;0,7733333;0,58208334;
+Ichthyos;0,925;0,9333333;0,8;0,7666667;0,9200001;0;0,5;1;0,5;0,7684211;0,50625;0,85;0,6791667;
+Larva;0,675;0,6933333;0,5833334;0,5333334;0,7133334;0,5;0;0,7125;0,5333334;0,5231579;0,44375002;0,6444444;0,56666666;
+Teuthus;1;1;1;1;1;1;0,7125;0;0,7125;0,591579;0,5;0,7958333;0,6208333;
+TrailerBeta;0,675;0,6933333;0,5833334;0,5333334;0,7133334;0,5;0,5333334;0,7125;0;0,5231579;0,44375002;0,6444444;0,56666666;
+Vermis;0,5957895;0,5452632;0,5952632;0,6936842;0,5936843;0,7684211;0,5231579;0,591579;0,5231579;0;0,48000002;0,5666667;0,5177193;
+DaimonBladeLauncher^DaimonEta^DaimonEtaLaser^DaimonEtaProjectile^DaimonKnight^DaimonLightning^DaimonLightningLase^DaimonLightningSpik^DaimonMobulaProject^DaimonMobulaLaser^DaimonMobulaBolt^DaimonMobulaBlade^DaimonObstacle^DaimonObstacleBolt^DaimonObstacleLaser^DaimonObstacleMissi^DaimonObstacleProje^DaimonObstacleSpike^DaimonSpike^DaimonSwarm^DaimonTrial^DaimonTurretBlade^DaimonTurretLaser^DaimonTurretMissile^DaimonTurretProject^DroneAlpha^DroneAlphaLaser^DroneAlphaSpike^DroneBeta^TrailerAlpha^WingAlpha^DaimonAlpha^DaimonBlade;0,484375;0,48250002;0,47500002;0,46249998;0,47500002;0,50625;0,44375002;0,5;0,44375002;0,48000002;0;0,46875;0,453125;
+DaimonBeta^DaimonEpsilon;0,7583333;0,75;0,7333333;0,8;0,7733333;0,85;0,6444444;0,7958333;0,6444444;0,5666667;0,46875;0;0,5263889;
+DaimonTurretCompoun^VermisChild;0,53333336;0,5411111;0,5552083;0,61875;0,58208334;0,6791667;0,56666666;0,6208333;0,56666666;0,5177193;0,453125;0,5263889;0;

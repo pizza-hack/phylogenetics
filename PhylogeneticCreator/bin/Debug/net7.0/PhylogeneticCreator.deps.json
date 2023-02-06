@@ -1,0 +1,127 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PhylogeneticCreator/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.8",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.10",
+          "csdot": "2.0.1"
+        },
+        "runtime": {
+          "PhylogeneticCreator.dll": {}
+        }
+      },
+      "csdot/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/csdot.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "ZXing.Net/0.16.8": {
+        "runtime": {
+          "lib/net6.0/zxing.dll": {
+            "assemblyVersion": "0.16.8.0",
+            "fileVersion": "0.16.8.0"
+          }
+        }
+      },
+      "ZXing.Net.Bindings.Windows.Compatibility/0.16.10": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.8"
+        },
+        "runtime": {
+          "lib/net6.0/ZXing.Windows.Compatibility.dll": {
+            "assemblyVersion": "0.16.10.0",
+            "fileVersion": "0.16.10.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PhylogeneticCreator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "csdot/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lStsF4GyhiNI4haiMPl4oRLiwA/GiN2051lciUPFZgCyuQ/LIUh6s2XA9UqoACHiweM0KW2jf0P/0p9i++a+dQ==",
+      "path": "csdot/2.0.1",
+      "hashPath": "csdot.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2nXPrhdAyAzir0gLl8Yy8S5Mnm/uBSQQA7jEsILOS1MTyS7DbmV1NgViMtvV1sfCD1ebITpNwb1NIinKeJgUVQ==",
+      "path": "microsoft.win32.systemevents/7.0.0",
+      "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "path": "system.drawing.common/7.0.0",
+      "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
+    },
+    "ZXing.Net/0.16.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cbbe+x7I7E+VJ0VxU1fPc7AktIw/9xea/ZY/fh38sXqTQ75LJp9ooGUjpzFqfpPfIKozAoXgJ4yvY4GzKpPBzQ==",
+      "path": "zxing.net/0.16.8",
+      "hashPath": "zxing.net.0.16.8.nupkg.sha512"
+    },
+    "ZXing.Net.Bindings.Windows.Compatibility/0.16.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-euWnxHf1jJ+jYyOjX/TAv9uVx4LKJPaUbuUG3O1F3Vkyp0LaXmutgKaJqHITvomyFp+cGt4N3CdC1Ftd5fQkmw==",
+      "path": "zxing.net.bindings.windows.compatibility/0.16.10",
+      "hashPath": "zxing.net.bindings.windows.compatibility.0.16.10.nupkg.sha512"
+    }
+  }
+}
