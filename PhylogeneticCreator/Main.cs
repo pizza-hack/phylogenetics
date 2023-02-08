@@ -10,7 +10,8 @@ public class Phylogenetic
         /*/
         PhylogeneticTree.Run(args);
         /*/
-        MatrixGenerator.Run(args);
+        //MatrixGenerator.Run(args);
         //*/
+        XMLToString.Run(args);
     }
 }
