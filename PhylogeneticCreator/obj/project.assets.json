@@ -11,6 +11,22 @@
           "lib/netstandard2.0/csdot.dll": {}
         }
       },
+      "F23.StringSimilarity/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/F23.StringSimilarity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/F23.StringSimilarity.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Win32.SystemEvents/7.0.0": {
         "type": "package",
         "compile": {
@@ -58,6 +74,15 @@
           }
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
       "ZXing.Net/0.16.8": {
         "type": "package",
         "compile": {
@@ -103,6 +128,20 @@
         "csdot.nuspec",
         "lib/net461/csdot.dll",
         "lib/netstandard2.0/csdot.dll"
+      ]
+    },
+    "F23.StringSimilarity/5.1.0": {
+      "sha512": "RcFtnxG3Pw/wBxQFZv65Wb9VZRLyjorw4rLPW0yqPXasINT3zBKz8cBzKRlESvXve4qrRyo/XSfYfYgmKs/lkg==",
+      "type": "package",
+      "path": "f23.stringsimilarity/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "f23.stringsimilarity.5.1.0.nupkg.sha512",
+        "f23.stringsimilarity.nuspec",
+        "lib/netstandard2.0/F23.StringSimilarity.dll",
+        "lib/netstandard2.0/F23.StringSimilarity.xml",
+        "logo.png"
       ]
     },
     "Microsoft.Win32.SystemEvents/7.0.0": {
@@ -171,6 +210,29 @@
         "system.drawing.common.7.0.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "ZXing.Net/0.16.8": {
@@ -287,6 +349,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "F23.StringSimilarity >= 5.1.0",
       "System.Drawing.Common >= 7.0.0",
       "ZXing.Net >= 0.16.8",
       "ZXing.Net.Bindings.Windows.Compatibility >= 0.16.10",
@@ -337,6 +400,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "F23.StringSimilarity": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[7.0.0, )"

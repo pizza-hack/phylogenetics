@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "4I6rtiwcMtR9olic1X/+Eg9Pn0ft2regiw5WTDkg8N3DZlV2emeHieFpdBzfe3Okmh8WPU8c0JfXXMKQLqziiQ==",
+  "dgSpecHash": "A/ZZaLDLbeEqhUnGwnqcrWPTBLUd77+TSXg/l1g1GieAIMp1XyOqL5d7JlxwZdF9Hvo/pfJxjHlbpV1eCYWOKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\danie\\OneDrive\\Documents\\4year\\SVIT\\Phylogenetic\\PhylogeneticCreator\\PhylogeneticCreator\\PhylogeneticCreator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\csdot\\2.0.1\\csdot.2.0.1.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\f23.stringsimilarity\\5.1.0\\f23.stringsimilarity.5.1.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\zxing.net.bindings.windows.compatibility\\0.16.10\\zxing.net.bindings.windows.compatibility.0.16.10.nupkg.sha512"
   ],

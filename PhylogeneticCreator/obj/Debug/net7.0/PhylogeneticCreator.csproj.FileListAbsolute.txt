@@ -21,3 +21,4 @@ C:\Users\danie\OneDrive\Documents\4year\SVIT\Phylogenetic\PhylogeneticCreator\Ph
 C:\Users\danie\OneDrive\Documents\4year\SVIT\Phylogenetic\PhylogeneticCreator\PhylogeneticCreator\obj\Debug\net7.0\PhylogeneticCreator.pdb
 C:\Users\danie\OneDrive\Documents\4year\SVIT\Phylogenetic\PhylogeneticCreator\PhylogeneticCreator\obj\Debug\net7.0\PhylogeneticCreator.genruntimeconfig.cache
 C:\Users\danie\OneDrive\Documents\4year\SVIT\Phylogenetic\PhylogeneticCreator\PhylogeneticCreator\obj\Debug\net7.0\ref\PhylogeneticCreator.dll
+C:\Users\danie\OneDrive\Documents\4year\SVIT\Phylogenetic\PhylogeneticCreator\PhylogeneticCreator\bin\Debug\net7.0\F23.StringSimilarity.dll

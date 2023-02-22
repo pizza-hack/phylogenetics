@@ -1,0 +1,1718 @@
+{
+	"COMPOUND": {
+		"GENERAL": {
+			"_LinearVelocityLossPerSecond": "0",
+			"_AngularVelocityLossPerSecond": "0",
+			"_InitialScaleX": "50",
+			"_InitialScaleY": "50",
+			"_InitialScaleZ": "50",
+			"_DestructionDelay": "-1",
+			"_EffectMultiplierKill": "1",
+			"_EffectMultiplierDestroy": "1",
+			"_EffectsMaskKill": "00000000000000000000000000000000",
+			"_EffectsMaskDestroy": "00000000000000000000000000000000"
+		},
+		"HULL": {
+			"Hull": [
+				{
+					"ObjectData": {
+						"_ModelFileName": "omega.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omega.bcs",
+						"_ObjectMass": "1.0",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "4000",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omega1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "-1.4",
+						"_PositionY": "0.59",
+						"_PositionZ": "-0.65",
+						"_OrientationW": "0.915",
+						"_OrientationX": "0.049",
+						"_OrientationY": "-0.379",
+						"_OrientationZ": "-0.120"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omega1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omega1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "1.4",
+						"_PositionY": "0.59",
+						"_PositionZ": "-0.65",
+						"_OrientationW": "-0.120",
+						"_OrientationX": "0.379",
+						"_OrientationY": "-0.049",
+						"_OrientationZ": "0.915"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omega1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omega1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "-1.4",
+						"_PositionY": "-0.59",
+						"_PositionZ": "-0.65",
+						"_OrientationW": "0.915",
+						"_OrientationX": "-0.049",
+						"_OrientationY": "-0.379",
+						"_OrientationZ": "0.120"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omega1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omega1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "1.4",
+						"_PositionY": "-0.59",
+						"_PositionZ": "-0.65",
+						"_OrientationW": "0.120",
+						"_OrientationX": "0.379",
+						"_OrientationY": "0.049",
+						"_OrientationZ": "0.915"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omega1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "dummy0.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "-0.55",
+						"_PositionY": "0",
+						"_PositionZ": "1.29",
+						"_OrientationW": "0",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "1"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omegaweapon0.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "dummy0.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "0.55",
+						"_PositionY": "0",
+						"_PositionZ": "1.29",
+						"_OrientationW": "0",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "1"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omegaweapon0.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omegaweapon1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "-3.3",
+						"_PositionY": "1",
+						"_PositionZ": "-2",
+						"_OrientationW": "0",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "1"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omegaweapon1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omegaweapon1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "3.3",
+						"_PositionY": "1",
+						"_PositionZ": "-2",
+						"_OrientationW": "0",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "1"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omegaweapon1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omegaweapon1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "-3.3",
+						"_PositionY": "-1",
+						"_PositionZ": "-2",
+						"_OrientationW": "0",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "1"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omegaweapon1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "omegaweapon1.mesh",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "3.3",
+						"_PositionY": "-1",
+						"_PositionZ": "-2",
+						"_OrientationW": "0",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "1"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "omegaweapon1.bcs",
+						"_ObjectMass": "0.01",
+						"_ObjectMaterial": "5"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "-1",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "-1",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "0"
+					},
+					"_HullType": "0"
+				}
+			],
+			"LINKS": {
+				"Link": [
+					{
+						"LinkData": {
+							"_HullIndexFirst": "0",
+							"_HullIndexSecond": "1",
+							"_Destructible": "1",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"_LinkType": "0"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "0",
+							"_HullIndexSecond": "2",
+							"_Destructible": "1",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"_LinkType": "0"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "0",
+							"_HullIndexSecond": "3",
+							"_Destructible": "1",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"_LinkType": "0"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "0",
+							"_HullIndexSecond": "4",
+							"_Destructible": "1",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"_LinkType": "0"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "0",
+							"_HullIndexSecond": "5",
+							"_Destructible": "1",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"_LinkType": "0"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "0",
+							"_HullIndexSecond": "6",
+							"_Destructible": "1",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"_LinkType": "0"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "1",
+							"_HullIndexSecond": "7",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkMovableData": {
+							"_LinkMovementType": "0",
+							"_LinkMovementFunctionType": "1",
+							"_LinkMovementControlState": "0",
+							"_MovementDistancePositive": "-1",
+							"_MovementDistanceNegative": "-1",
+							"_MovementSpeed": "-180",
+							"_InitialOffsetPercentage": "0",
+							"_MovementAxisX": "0",
+							"_MovementAxisY": "0",
+							"_MovementAxisZ": "-1"
+						},
+						"_LinkType": "3"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "2",
+							"_HullIndexSecond": "8",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkMovableData": {
+							"_LinkMovementType": "0",
+							"_LinkMovementFunctionType": "1",
+							"_LinkMovementControlState": "0",
+							"_MovementDistancePositive": "-1",
+							"_MovementDistanceNegative": "-1",
+							"_MovementSpeed": "180",
+							"_InitialOffsetPercentage": "0",
+							"_MovementAxisX": "0",
+							"_MovementAxisY": "0",
+							"_MovementAxisZ": "-1"
+						},
+						"_LinkType": "3"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "3",
+							"_HullIndexSecond": "9",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkMovableData": {
+							"_LinkMovementType": "0",
+							"_LinkMovementFunctionType": "1",
+							"_LinkMovementControlState": "0",
+							"_MovementDistancePositive": "-1",
+							"_MovementDistanceNegative": "-1",
+							"_MovementSpeed": "-180",
+							"_InitialOffsetPercentage": "0",
+							"_MovementAxisX": "0",
+							"_MovementAxisY": "0",
+							"_MovementAxisZ": "-1"
+						},
+						"_LinkType": "3"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "4",
+							"_HullIndexSecond": "10",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkMovableData": {
+							"_LinkMovementType": "0",
+							"_LinkMovementFunctionType": "1",
+							"_LinkMovementControlState": "0",
+							"_MovementDistancePositive": "-1",
+							"_MovementDistanceNegative": "-1",
+							"_MovementSpeed": "180",
+							"_InitialOffsetPercentage": "0",
+							"_MovementAxisX": "0",
+							"_MovementAxisY": "0",
+							"_MovementAxisZ": "-1"
+						},
+						"_LinkType": "3"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "1",
+							"_HullIndexSecond": "-1",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkRopeData": {
+							"_PositionFirstX": "-2.597",
+							"_PositionFirstY": "0.985",
+							"_PositionFirstZ": "-1.884",
+							"_PositionSecondX": "-2.597",
+							"_PositionSecondY": "0.985",
+							"_PositionSecondZ": "-4.634",
+							"_RopeType": "0",
+							"_RopeElements": "12",
+							"_RopeMass": "0.0"
+						},
+						"_LinkType": "1"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "2",
+							"_HullIndexSecond": "-1",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkRopeData": {
+							"_PositionFirstX": "2.597",
+							"_PositionFirstY": "0.985",
+							"_PositionFirstZ": "-1.884",
+							"_PositionSecondX": "2.597",
+							"_PositionSecondY": "0.985",
+							"_PositionSecondZ": "-4.634",
+							"_RopeType": "0",
+							"_RopeElements": "12",
+							"_RopeMass": "0.0"
+						},
+						"_LinkType": "1"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "3",
+							"_HullIndexSecond": "-1",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkRopeData": {
+							"_PositionFirstX": "-2.597",
+							"_PositionFirstY": "-0.985",
+							"_PositionFirstZ": "-1.884",
+							"_PositionSecondX": "-2.597",
+							"_PositionSecondY": "-0.985",
+							"_PositionSecondZ": "-4.634",
+							"_RopeType": "0",
+							"_RopeElements": "12",
+							"_RopeMass": "0.0"
+						},
+						"_LinkType": "1"
+					},
+					{
+						"LinkData": {
+							"_HullIndexFirst": "4",
+							"_HullIndexSecond": "-1",
+							"_Destructible": "0",
+							"_DestructionDelay": "0",
+							"_EffectMultiplierKill": "1",
+							"_EffectMultiplierDestroy": "1",
+							"_EffectsMaskKill": "00000000000000000000000000000000",
+							"_EffectsMaskDestroy": "00000000000000000000000000000000"
+						},
+						"LinkRopeData": {
+							"_PositionFirstX": "2.597",
+							"_PositionFirstY": "-0.985",
+							"_PositionFirstZ": "-1.884",
+							"_PositionSecondX": "2.597",
+							"_PositionSecondY": "-0.985",
+							"_PositionSecondZ": "-4.634",
+							"_RopeType": "0",
+							"_RopeElements": "12",
+							"_RopeMass": "0.0"
+						},
+						"_LinkType": "1"
+					}
+				],
+				"_Number": "14"
+			},
+			"_Number": "11"
+		},
+		"REACTORS": {
+			"Reactor": {
+				"ObjectData": {
+					"_ModelFileName": "omegareactor.mesh",
+					"_ScaleX": "1",
+					"_ScaleY": "1",
+					"_ScaleZ": "1",
+					"_PositionX": "0",
+					"_PositionY": "0",
+					"_PositionZ": "0",
+					"_OrientationW": "1",
+					"_OrientationX": "0",
+					"_OrientationY": "0",
+					"_OrientationZ": "0"
+				},
+				"PhysicalObjectData": {
+					"_CollisionModelFileName": "",
+					"_ObjectMaterial": "0",
+					"_ObjectMass": "0"
+				},
+				"AliveObjectData": {
+					"_ObjectMaximumLife": "100",
+					"_ObjectArmor": "0",
+					"_DestructionDelay": "0",
+					"_EffectMultiplierKill": "1",
+					"_EffectMultiplierDestroy": "1",
+					"_EffectsMaskKill": "00000000101000000000000000010110",
+					"_EffectsMaskDestroy": "00000000101000000000000000010110"
+				},
+				"ComponentData": {
+					"_HullIndexParent": "0",
+					"_LocalDirectionX": "0",
+					"_LocalDirectionY": "0",
+					"_LocalDirectionZ": "0"
+				},
+				"ReactorData": {
+					"_ReactorEnergy": "10000000"
+				}
+			},
+			"_Number": "1"
+		},
+		"WEAPONRYWEAPONSAI": {
+			"Weapon": [
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1.0",
+						"_ScaleY": "1.0",
+						"_ScaleZ": "1.0",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000000101000000000000000010110",
+						"_EffectsMaskDestroy": "00000000101000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "5",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"MobileObjects": {
+						"MobileObject": {
+							"_ModelFileName": "omegaweapon0.mesh",
+							"_LocalPositionX": "0",
+							"_LocalPositionY": "0",
+							"_LocalPositionZ": "0"
+						},
+						"_Number": "1",
+						"_MobilityType": "3"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "0.1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "0.1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.1",
+						"_ProjectileInitialScaleX": "0.05",
+						"_ProjectileInitialScaleY": "0.05",
+						"_ProjectileInitialScaleZ": "0.01",
+						"_ProjectileFinalScaleX": "0.1",
+						"_ProjectileFinalScaleY": "0.1",
+						"_ProjectileFinalScaleZ": "0.4",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "250",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "10"
+					},
+					"WeaponProjectileData": {
+						"_ProjectileType": "1",
+						"_ProjectilePower": "100"
+					},
+					"Cannons": {
+						"WeaponCannon": [
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "5",
+									"_FiringTurnEnd": "50",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1.15",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "55",
+									"_FiringTurnEnd": "100",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1.15",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "105",
+									"_FiringTurnEnd": "150",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1.15",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							}
+						],
+						"_Number": "3",
+						"_FiringTurnMaximum": "499"
+					},
+					"_WeaponType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "5",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.1",
+						"_ProjectileInitialScaleX": "0.1",
+						"_ProjectileInitialScaleY": "0.1",
+						"_ProjectileInitialScaleZ": "0.1",
+						"_ProjectileFinalScaleX": "0.3",
+						"_ProjectileFinalScaleY": "0.3",
+						"_ProjectileFinalScaleZ": "0.3",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "50",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "20"
+					},
+					"WeaponProjectileData": {
+						"_ProjectileType": "102",
+						"_ProjectilePower": "100"
+					},
+					"Cannons": {
+						"WeaponCannon": [
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0.5",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0.25",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "-0.5",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "-0.25",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "0.5",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "0.25",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "-0.5",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "-0.25",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							}
+						],
+						"_Number": "4",
+						"_FiringTurnMaximum": "49"
+					},
+					"_WeaponType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1.0",
+						"_ScaleY": "1.0",
+						"_ScaleZ": "1.0",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000000101000000000000000010110",
+						"_EffectsMaskDestroy": "00000000101000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "6",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"MobileObjects": {
+						"MobileObject": {
+							"_ModelFileName": "omegaweapon0.mesh",
+							"_LocalPositionX": "0",
+							"_LocalPositionY": "0",
+							"_LocalPositionZ": "0"
+						},
+						"_Number": "1",
+						"_MobilityType": "3"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "0.1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "0.1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.1",
+						"_ProjectileInitialScaleX": "0.05",
+						"_ProjectileInitialScaleY": "0.05",
+						"_ProjectileInitialScaleZ": "0.01",
+						"_ProjectileFinalScaleX": "0.1",
+						"_ProjectileFinalScaleY": "0.1",
+						"_ProjectileFinalScaleZ": "0.4",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "250",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "10"
+					},
+					"WeaponProjectileData": {
+						"_ProjectileType": "1",
+						"_ProjectilePower": "100"
+					},
+					"Cannons": {
+						"WeaponCannon": [
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "5",
+									"_FiringTurnEnd": "50",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1.15",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "55",
+									"_FiringTurnEnd": "100",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1.15",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "105",
+									"_FiringTurnEnd": "150",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1.15",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							}
+						],
+						"_Number": "3",
+						"_FiringTurnMaximum": "499"
+					},
+					"_WeaponType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1",
+						"_ScaleY": "1",
+						"_ScaleZ": "1",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000001010000000000000000010110",
+						"_EffectsMaskDestroy": "00000001010000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "6",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.1",
+						"_ProjectileInitialScaleX": "0.1",
+						"_ProjectileInitialScaleY": "0.1",
+						"_ProjectileInitialScaleZ": "0.1",
+						"_ProjectileFinalScaleX": "0.3",
+						"_ProjectileFinalScaleY": "0.3",
+						"_ProjectileFinalScaleZ": "0.3",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "50",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "20"
+					},
+					"WeaponProjectileData": {
+						"_ProjectileType": "102",
+						"_ProjectilePower": "100"
+					},
+					"Cannons": {
+						"WeaponCannon": [
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "0.5",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "0.25",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "0",
+									"_FiringPositionY": "-0.5",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "0",
+									"_FiringDirectionY": "-0.25",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "0.5",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "0.25",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							},
+							{
+								"WeaponCannonData": {
+									"_FiringTurnStart": "20",
+									"_FiringTurnEnd": "25",
+									"_Roll": "0",
+									"_FiringPositionX": "-0.5",
+									"_FiringPositionY": "0",
+									"_FiringPositionZ": "1",
+									"_FiringDirectionX": "-0.25",
+									"_FiringDirectionY": "0",
+									"_FiringDirectionZ": "1"
+								}
+							}
+						],
+						"_Number": "4",
+						"_FiringTurnMaximum": "49"
+					},
+					"_WeaponType": "0"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1.0",
+						"_ScaleY": "1.0",
+						"_ScaleZ": "1.0",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000000101000000000000000010110",
+						"_EffectsMaskDestroy": "00000000101000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "7",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.01",
+						"_ProjectileInitialScaleX": "0.1",
+						"_ProjectileInitialScaleY": "0.1",
+						"_ProjectileInitialScaleZ": "0.1",
+						"_ProjectileFinalScaleX": "1",
+						"_ProjectileFinalScaleY": "1",
+						"_ProjectileFinalScaleZ": "1",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "100",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "10"
+					},
+					"WeaponUnitData": {
+						"_UnitType": "51",
+						"_DistanceToTravel": "0.0",
+						"_DamageOnImpact": "0.0"
+					},
+					"Cannons": {
+						"WeaponCannon": {
+							"WeaponCannonData": {
+								"_FiringTurnStart": "30",
+								"_FiringTurnEnd": "32",
+								"_Roll": "0",
+								"_FiringPositionX": "0",
+								"_FiringPositionY": "0",
+								"_FiringPositionZ": "1.15",
+								"_FiringDirectionX": "0",
+								"_FiringDirectionY": "0",
+								"_FiringDirectionZ": "1"
+							}
+						},
+						"_Number": "1",
+						"_FiringTurnMaximum": "49"
+					},
+					"_WeaponType": "7"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1.0",
+						"_ScaleY": "1.0",
+						"_ScaleZ": "1.0",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000000101000000000000000010110",
+						"_EffectsMaskDestroy": "00000000101000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "8",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.01",
+						"_ProjectileInitialScaleX": "0.1",
+						"_ProjectileInitialScaleY": "0.1",
+						"_ProjectileInitialScaleZ": "0.1",
+						"_ProjectileFinalScaleX": "1",
+						"_ProjectileFinalScaleY": "1",
+						"_ProjectileFinalScaleZ": "1",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "100",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "10"
+					},
+					"WeaponUnitData": {
+						"_UnitType": "52",
+						"_DistanceToTravel": "0.0",
+						"_DamageOnImpact": "0.0"
+					},
+					"Cannons": {
+						"WeaponCannon": {
+							"WeaponCannonData": {
+								"_FiringTurnStart": "30",
+								"_FiringTurnEnd": "32",
+								"_Roll": "0",
+								"_FiringPositionX": "0",
+								"_FiringPositionY": "0",
+								"_FiringPositionZ": "1.15",
+								"_FiringDirectionX": "0",
+								"_FiringDirectionY": "0",
+								"_FiringDirectionZ": "1"
+							}
+						},
+						"_Number": "1",
+						"_FiringTurnMaximum": "49"
+					},
+					"_WeaponType": "7"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1.0",
+						"_ScaleY": "1.0",
+						"_ScaleZ": "1.0",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000000101000000000000000010110",
+						"_EffectsMaskDestroy": "00000000101000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "9",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.01",
+						"_ProjectileInitialScaleX": "0.1",
+						"_ProjectileInitialScaleY": "0.1",
+						"_ProjectileInitialScaleZ": "0.1",
+						"_ProjectileFinalScaleX": "1",
+						"_ProjectileFinalScaleY": "1",
+						"_ProjectileFinalScaleZ": "1",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "100",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "10"
+					},
+					"WeaponUnitData": {
+						"_UnitType": "53",
+						"_DistanceToTravel": "0.0",
+						"_DamageOnImpact": "0.0"
+					},
+					"Cannons": {
+						"WeaponCannon": {
+							"WeaponCannonData": {
+								"_FiringTurnStart": "30",
+								"_FiringTurnEnd": "32",
+								"_Roll": "0",
+								"_FiringPositionX": "0",
+								"_FiringPositionY": "0",
+								"_FiringPositionZ": "1.15",
+								"_FiringDirectionX": "0",
+								"_FiringDirectionY": "0",
+								"_FiringDirectionZ": "1"
+							}
+						},
+						"_Number": "1",
+						"_FiringTurnMaximum": "49"
+					},
+					"_WeaponType": "7"
+				},
+				{
+					"ObjectData": {
+						"_ModelFileName": "",
+						"_ScaleX": "1.0",
+						"_ScaleY": "1.0",
+						"_ScaleZ": "1.0",
+						"_PositionX": "0",
+						"_PositionY": "0",
+						"_PositionZ": "0",
+						"_OrientationW": "1",
+						"_OrientationX": "0",
+						"_OrientationY": "0",
+						"_OrientationZ": "0"
+					},
+					"PhysicalObjectData": {
+						"_CollisionModelFileName": "",
+						"_ObjectMaterial": "0",
+						"_ObjectMass": "0"
+					},
+					"AliveObjectData": {
+						"_ObjectMaximumLife": "100",
+						"_ObjectArmor": "0",
+						"_DestructionDelay": "0",
+						"_EffectMultiplierKill": "1",
+						"_EffectMultiplierDestroy": "1",
+						"_EffectsMaskKill": "00000000101000000000000000010110",
+						"_EffectsMaskDestroy": "00000000101000000000000000010110"
+					},
+					"ComponentData": {
+						"_HullIndexParent": "10",
+						"_LocalDirectionX": "0",
+						"_LocalDirectionY": "0",
+						"_LocalDirectionZ": "1"
+					},
+					"WeaponData": {
+						"_WeaponPriority": "0",
+						"_WeaponBehaviour": "2",
+						"_ReloadTime": "1",
+						"_HasLock": "0",
+						"_AffectorType": "-1",
+						"_AffectorScaleFactor": "1",
+						"_AffectorPowerFactor": "1",
+						"_AffectorPositionX": "0",
+						"_AffectorPositionY": "0",
+						"_AffectorPositionZ": "0"
+					},
+					"WeaponWithCannonsData": {
+						"_MaximumTurretAngle": "0",
+						"_AccelerationAngular": "0",
+						"_MaximumSpeedAngular": "0",
+						"_FiringOffsetLocalMultiplier": "0",
+						"_FiringOffsetToAddX": "0",
+						"_FiringOffsetToAddY": "0",
+						"_FiringOffsetToAddZ": "0",
+						"_ReachDestinationAtFullAngularSpeed": "0",
+						"_AimApplyingForceToParentHull": "0"
+					},
+					"WeaponCompoundObjectData": {
+						"_MaximumAmmo": "-1",
+						"_Dispersion": "0.01",
+						"_ProjectileTimeToLive": "0",
+						"_ProjectileScaleTime": "0.1",
+						"_ProjectileInitialScaleX": "0.1",
+						"_ProjectileInitialScaleY": "0.1",
+						"_ProjectileInitialScaleZ": "0.1",
+						"_ProjectileFinalScaleX": "1",
+						"_ProjectileFinalScaleY": "1",
+						"_ProjectileFinalScaleZ": "1",
+						"_ProjectileInitialLinearVelocityX": "0",
+						"_ProjectileInitialLinearVelocityY": "0",
+						"_ProjectileInitialLinearVelocityZ": "100",
+						"_ProjectileInitialAngularVelocityX": "0",
+						"_ProjectileInitialAngularVelocityY": "0",
+						"_ProjectileInitialAngularVelocityZ": "10"
+					},
+					"WeaponUnitData": {
+						"_UnitType": "54",
+						"_DistanceToTravel": "0.0",
+						"_DamageOnImpact": "0.0"
+					},
+					"Cannons": {
+						"WeaponCannon": {
+							"WeaponCannonData": {
+								"_FiringTurnStart": "30",
+								"_FiringTurnEnd": "32",
+								"_Roll": "0",
+								"_FiringPositionX": "0",
+								"_FiringPositionY": "0",
+								"_FiringPositionZ": "1.15",
+								"_FiringDirectionX": "0",
+								"_FiringDirectionY": "0",
+								"_FiringDirectionZ": "1"
+							}
+						},
+						"_Number": "1",
+						"_FiringTurnMaximum": "49"
+					},
+					"_WeaponType": "7"
+				}
+			],
+			"_Number": "8"
+		},
+		"MOVEMENTAI": {
+			"AIModuleMovementDirectData": {
+				"_Acceleration": "50",
+				"_MinimumSpeed": "50",
+				"_MaximumSpeed": "1000",
+				"_ReachDestinationAtFullLinearSpeed": "0"
+			},
+			"AIModuleMovementDirectWithOrientationData": {
+				"_AccelerationAngular": "0.5",
+				"_MaximumSpeedAngular": "1",
+				"_ReachDestinationAtFullAngularSpeed": "1"
+			},
+			"_AIModuleMovementType": "6"
+		},
+		"AIUNIT": {
+			"BehaviourUnitAIData": {
+				"_AIFormationType": "2",
+				"_AIFormationSeparationMultiplier": "5",
+				"_AIGroupBehaviourType": "-1",
+				"_AIGroupBehaviourDistance": "0",
+				"_AIGroupAttackBehaviourType": "-1",
+				"_AIGroupAttackSpeed": "0",
+				"_AIBehaviourType": "4",
+				"_AIBehaviourDistance": "300",
+				"_AIAttackBehaviourType": "0",
+				"_AIAttackSpeed": "100"
+			},
+			"_Number": "1",
+			"_UnitValue": "-1"
+		}
+	}
+}

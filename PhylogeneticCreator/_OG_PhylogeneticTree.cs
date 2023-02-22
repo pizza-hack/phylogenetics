@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Text;
 
-class PhylogeneticTree
+class _OG_PhylogeneticTree
 {
     private delegate float operateDictionary(float a, float b);
     
@@ -212,9 +212,39 @@ class PhylogeneticTree
             }
 
             nodes.Add(newHeader, newHeader);
-            string color = "#006400";
-            //outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "rounded", color,currentResult.Value.ToString(CultureInfo.InvariantCulture),color));
-            outputToReturn.AppendLine("\t"+gf.Node(newHeader,"placeholder_", "diamond", "rounded", color,"",color));
+            if(containsSpecialChar1 && containsSpecialChar2)
+            { 
+                // If its not the last element
+                if (i != results.Count - 1)
+                {
+                    // A blue color just a little darker than the skyblue
+                    string color = "#00bfff";
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond","",color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
+                }
+                else
+                {
+                    // Deep red
+                    string color = "#8B0000";
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "diagonals", color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
+                }
+            }
+            else
+            {
+                if (i != results.Count - 1)
+                {
+                    // Green
+                    string color = "#006400";
+                    // TODO, add comment with currentResult.Value.ToString(CultureInfo.InvariantCulture)
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "rounded", color,currentResult.Value.ToString(CultureInfo.InvariantCulture),color));
+                }
+                else
+                {
+                    // Deep red
+                    string color = "#8B0000";
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "diagonals", color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
+                }
+                
+            }
 
             outputToReturn.Append("\t");
             outputToReturn.AppendLine(containsSpecialChar1
