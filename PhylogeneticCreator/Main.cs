@@ -7,6 +7,7 @@ public class Phylogenetic
 {
     static void Main(string[] args)
     {
+        Tree_XMLParser treeXmlParser = new Tree_XMLParser();
         //*/
         //PhylogeneticTree.Run(args);
         /*/
@@ -14,8 +15,8 @@ public class Phylogenetic
         //*/
         //JSONToString.Run();
         
-        //SVG_Parser.Run(new Dictionary<string, int>());
+        SVG_Parser.Run(new Dictionary<string, int>());
         
-        XMLToString.Run(args);
+        //XMLToString.Run();
     }
 }

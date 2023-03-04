@@ -16,18 +16,21 @@ public class SVG_Parser
         //     <title>NAME</title>
         //     <text> </text>
         XmlNamespaceManager namespaceManager = GetNamespaceManager(svgDoc);
-        XmlNodeList nodeList = svgDoc.SelectNodes("//svg:g[@class='node']/svg:title[contains(text(), '_')]", namespaceManager);
-        foreach (XmlNode node in nodeList)
-        {
-            string nodeName = node.ParentNode.SelectSingleNode("svg:title", namespaceManager).InnerText;
-            
-            var innerNode = node.ParentNode.SelectSingleNode("svg:text", namespaceManager);
-            string innerText = innerNode.InnerText;
-            Console.WriteLine(nodeName + " " + innerText);
-            // TODO: Substitute the placeholders with the correct numbers
-            innerText = Regex.Replace(innerText, "_", " ");
-            innerNode.InnerText = innerText;
-        }
+        XmlNodeList? nodeList = svgDoc.SelectNodes("//svg:g[@class='node']/svg:title[contains(text(), '_')]", namespaceManager);
+        if (nodeList != null)
+            foreach (XmlNode node in nodeList)
+            {
+                if (node.ParentNode == null) continue;
+                string nodeName = node.ParentNode.SelectSingleNode("svg:title", namespaceManager)?.InnerText ?? string.Empty;
+
+                var innerNode = node.ParentNode.SelectSingleNode("svg:text", namespaceManager);
+                string innerText = innerNode?.InnerText ?? string.Empty;
+                Console.WriteLine(nodeName + " " + innerText);
+                // TODO: Substitute the placeholders with the correct numbers
+                // Get the number of lines from the dictionary
+                innerText = codeLines[nodeName].ToString();
+                if (innerNode != null) innerNode.InnerText = innerText;
+            }
 
         // Save modified SVG file
         svgDoc.Save(ProjectSourcePath.Value +"output.svg");

@@ -1,6 +1,8 @@
-﻿using System.Diagnostics;
+﻿
+using System.Diagnostics;
 using System.Globalization;
 using System.Text;
+using Graph;
 
 class PhylogeneticTree
 {
@@ -11,7 +13,7 @@ class PhylogeneticTree
     public const string outputLocation = "Data/output.dot";
     public const string graphOutputLocation = "Data/graph.svg";
 
-    public static void Run(string[] args)
+    public static void Run(string[] args, Tree_XMLParser treeXmlParser)
     {
         bool usePredefined = false;
 
@@ -29,7 +31,7 @@ class PhylogeneticTree
             // Original headers
             headers = dataDictionary.Headers ?? Array.Empty<string>();
             // Process the dictionary with linealMean
-            DataStructures.PhylogeneticDictionary linealMeanDictionary = dictionaryIterator(dataDictionary, outputPairs, true);
+            DataStructures.PhylogeneticDictionary linealMeanDictionary = dictionaryIterator(dataDictionary, outputPairs, treeXmlParser, true);
             // Write the result to the output file
             exportOutputPairs(outputPairs, headers, projectSourcePath + lastResult);
         }
@@ -266,7 +268,8 @@ class PhylogeneticTree
         
     }
     
-    private static DataStructures.PhylogeneticDictionary dictionaryIterator(DataStructures.PhylogeneticDictionary dict, ICollection<DataStructures.OutputPair> Output, bool outputLayers = true)
+    private static DataStructures.PhylogeneticDictionary dictionaryIterator(DataStructures.PhylogeneticDictionary dict, ICollection<DataStructures.OutputPair> Output, 
+        Tree_XMLParser treeXmlParser ,bool outputLayers = true)
     {
         if(outputLayers){
             // Empty the output folder (ProjectSourcePath.Value + "Data/Layers/)
@@ -281,7 +284,10 @@ class PhylogeneticTree
         int layerDepth = 0;
         while (dict.Count() > 4)
         {
-            dict = properProcessDic(dict, Mean, Output, layerDepth);
+            dict = properProcessDic(dict, Mean, Output, layerDepth, out Tuple<string, string> processedPair);
+            
+            treeXmlParser.AddXMLToParse(layerDepth, processedPair);
+            
             // Export the dictionary to a csv inside Data/Layers/layerDepth.csv
             if (outputLayers)
             {
@@ -393,8 +399,11 @@ class PhylogeneticTree
     }
     */
     
-    private static DataStructures.PhylogeneticDictionary properProcessDic(DataStructures.PhylogeneticDictionary dict, operateDictionary operation, ICollection<DataStructures.OutputPair> outputPairs, int layer)
+    private static DataStructures.PhylogeneticDictionary properProcessDic(DataStructures.PhylogeneticDictionary dict, operateDictionary operation, ICollection<DataStructures.OutputPair> outputPairs, int layer
+        , out Tuple<string,string> processed)
     {
+        processed = new Tuple<string, string>("","");
+        
         // Find the smallest value in the dictionary that isnt with itself
         DataStructures.Pair[] smallestPairs = dict.getMinPairs();
         DataStructures.Pair smallestPair = smallestPairs[0];
@@ -491,6 +500,8 @@ class PhylogeneticTree
         // Remove the first and second key from the dictionary headers
         tempDict.RemoveHeader(firstKey);
         tempDict.RemoveHeader(secondKey);
+        
+        processed = new Tuple<string, string>(firstKey, secondKey);
         
         // Print the new dictionary
         printDictionaryAsTable(tempDict,-1);
