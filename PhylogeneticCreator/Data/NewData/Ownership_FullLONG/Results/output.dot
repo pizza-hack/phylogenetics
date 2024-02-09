@@ -1,0 +1,19 @@
+graph phylogenetic_tree 
+{
+	layout=neato
+	label="Phylogenetic Tree from: OwnershipData.csv"
+	mode=major
+	model=shortpath
+	size=""
+	ratio=fill
+	orientation=portrait
+
+
+{node [shape=plaintext, fontsize=14, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD COLSPAN="2"><B>Legend</B></TD></TR>
+<TR><TD>Nodes</TD><TD BGCOLOR="#87CEEB"><FONT COLOR="#87CEEB">Foo</FONT></TD></TR>
+<TR><TD>Links</TD><TD BGCOLOR="#006400"><FONT COLOR="#006400">Foo</FONT></TD></TR>
+<TR><TD>Final</TD><TD BGCOLOR="#8B0000"><FONT COLOR="#8B0000">Foo</FONT></TD></TR>
+</TABLE>>, margin="0,0"] legend}
+{rank=max; legend}
+}

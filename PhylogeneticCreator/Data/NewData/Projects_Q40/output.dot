@@ -1,0 +1,90 @@
+graph phylogenetic_tree 
+{
+	layout=neato
+	label="Phylogenetic Tree from: Q40Projects.csv"
+	mode=major
+	model=shortpath
+	size=""
+	ratio=fill
+	orientation=portrait
+
+#0
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q62_Q40</FONT>>] Q62_Q40}
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q66_Q40</FONT>>] Q66_Q40}
+	{node [tooltip="0.017115384",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">0</FONT>>] Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q62_Q40 -- Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q66_Q40 -- Q62_Q40_Q66_Q40}
+#1
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q59_Q40</FONT>>] Q59_Q40}
+	{node [tooltip="0.031278934",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">1</FONT>>] Q59_Q40_Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q59_Q40 -- Q59_Q40_Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q62_Q40_Q66_Q40 -- Q59_Q40_Q62_Q40_Q66_Q40}
+#2
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q68_Q40</FONT>>] Q68_Q40}
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q70_Q40</FONT>>] Q70_Q40}
+	{node [tooltip="0.039595958",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">2</FONT>>] Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q68_Q40 -- Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q70_Q40 -- Q68_Q40_Q70_Q40}
+#3
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q64_Q40</FONT>>] Q64_Q40}
+	{node [tooltip="0.041195977",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">3</FONT>>] Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q64_Q40 -- Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q59_Q40_Q62_Q40_Q66_Q40 -- Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40}
+#4
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q75_Q40</FONT>>] Q75_Q40}
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q80_Q40</FONT>>] Q80_Q40}
+	{node [tooltip="0.050707694",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">4</FONT>>] Q75_Q40_Q80_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q75_Q40 -- Q75_Q40_Q80_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q80_Q40 -- Q75_Q40_Q80_Q40}
+#5
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q67_Q40</FONT>>] Q67_Q40}
+	{node [tooltip="0.06133408",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">5</FONT>>] Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q67_Q40 -- Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40 -- Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40}
+#6
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q53_Q40</FONT>>] Q53_Q40}
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q54_Q40</FONT>>] Q54_Q40}
+	{node [tooltip="0.066744454",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">6</FONT>>] Q53_Q40_Q54_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q53_Q40 -- Q53_Q40_Q54_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q54_Q40 -- Q53_Q40_Q54_Q40}
+#7
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q56_Q40</FONT>>] Q56_Q40}
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q57_Q40</FONT>>] Q57_Q40}
+	{node [tooltip="0.1539389",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">7</FONT>>] Q56_Q40_Q57_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q56_Q40 -- Q56_Q40_Q57_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q57_Q40 -- Q56_Q40_Q57_Q40}
+#8
+	{node [tooltip="0.16338536",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">8</FONT>>] Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40 -- Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q56_Q40_Q57_Q40 -- Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40}
+#9
+	{node [tooltip="0.24609782",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">9</FONT>>] Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q53_Q40_Q54_Q40 -- Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40 -- Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40}
+#10
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q72_Q40</FONT>>] Q72_Q40}
+	{node [tooltip="0.31994218",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">10</FONT>>] Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q72_Q40 -- Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q68_Q40_Q70_Q40 -- Q72_Q40_Q68_Q40_Q70_Q40}
+#11
+	{node [tooltip="0.42249283",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">11</FONT>>] Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40 -- Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q72_Q40_Q68_Q40_Q70_Q40 -- Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+#12
+	{node [tooltip="0.57757354",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">12</FONT>>] Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q75_Q40_Q80_Q40 -- Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40 -- Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+#13
+	{node [tooltip="",width="0,3",height="0,3",shape="octagon",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000">Q46_Q40</FONT>>] Q46_Q40}
+	{node [tooltip="0.6922009",width="0,3",height="0,3",shape="diamond",style="filled",color="#8B0000",label=<<FONT COLOR="#8B0000">13</FONT>>] Q46_Q40_Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="solid",label="",dir="forward"] Q46_Q40 -- Q46_Q40_Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+	{edge [color="#000000",style="dashed",label="",dir="forward"] Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40 -- Q46_Q40_Q75_Q40_Q80_Q40_Q53_Q40_Q54_Q40_Q67_Q40_Q64_Q40_Q59_Q40_Q62_Q40_Q66_Q40_Q56_Q40_Q57_Q40_Q72_Q40_Q68_Q40_Q70_Q40}
+
+{node [shape=plaintext, fontsize=14, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD COLSPAN="2"><B>Legend</B></TD></TR>
+<TR><TD>Nodes</TD><TD BGCOLOR="#87CEEB"><FONT COLOR="#87CEEB">Foo</FONT></TD></TR>
+<TR><TD>Links</TD><TD BGCOLOR="#006400"><FONT COLOR="#006400">Foo</FONT></TD></TR>
+<TR><TD>Final</TD><TD BGCOLOR="#8B0000"><FONT COLOR="#8B0000">Foo</FONT></TD></TR>
+</TABLE>>, margin="3,0.5"] legend}
+{rank=max; legend}
+}

@@ -1,0 +1,38 @@
+graph phylogenetic_tree 
+{
+	layout=dot
+	label="Phylogenetic Tree from: ProcessedMatrix.csv"
+	mode=major
+	model=shortpath
+	size=""
+	ratio=fill
+	orientation=portrait
+
+#1
+	{node [tooltip="",width="0,3",height="0,3",shape="plaintext",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000"><table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="lightcoral" rowspan="2">Cube1</td><td border="0" width="20" height="20"></td><td bgcolor="aqua">GameObject</td><td bgcolor="aquamarine">Transform</td><td bgcolor="bisque">MeshFilter</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="darkorchid">MeshRenderer</td><td bgcolor="gray">BoxCollider</td></tr></table></FONT>>] 1}
+#2
+	{node [tooltip="",width="0,3",height="0,3",shape="plaintext",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000"><table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="lightcoral" rowspan="2">Hammer</td><td border="0" width="20" height="20"></td><td bgcolor="aqua">GameObject</td><td bgcolor="aquamarine">Transform</td><td bgcolor="bisque">MeshFilter</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="darkorchid">MeshRenderer</td><td bgcolor="gray">BoxCollider</td><td bgcolor="hotpink">Rigidbody</td></tr></table></FONT>>] 2}
+#3
+	{node [tooltip="",width="0,3",height="0,3",shape="plaintext",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000"><table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="lightcoral" rowspan="3">LightSourceCandles</td><td border="0" width="20" height="20"></td><td bgcolor="aqua">GameObject</td><td bgcolor="aquamarine">Transform</td><td bgcolor="bisque">MeshFilter</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="darkorchid">MeshRenderer</td><td bgcolor="gray">BoxCollider</td><td bgcolor="hotpink">Rigidbody</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="cadetblue">Light</td><td bgcolor="chocolate">MonoBehaviour</td></tr></table></FONT>>] 3}
+#4
+	{node [tooltip="",width="0,3",height="0,3",shape="plaintext",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000"><table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="lightcoral" rowspan="3">CameraHolder</td><td border="0" width="20" height="20"></td><td bgcolor="aqua">GameObject</td><td bgcolor="aquamarine">Transform</td><td bgcolor="chocolate">MonoBehaviour</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="coral">RectTransform</td><td bgcolor="cornflowerblue">CanvasRenderer</td><td bgcolor="crimson">Canvas</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="greenyellow">Camera</td><td bgcolor="gold">AudioListener</td></tr></table></FONT>>] 4}
+#5
+	{node [tooltip="",width="0,3",height="0,3",shape="plaintext",style="filled",color="#87CEEB",label=<<FONT COLOR="#000000"><table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="lightcoral" rowspan="3">Player</td><td border="0" width="20" height="20"></td><td bgcolor="aqua">GameObject</td><td bgcolor="aquamarine">Transform</td><td bgcolor="bisque">MeshFilter</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="darkorchid">MeshRenderer</td><td bgcolor="hotpink">Rigidbody</td><td bgcolor="chocolate">MonoBehaviour</td></tr><tr><td border="0" width="20" height="20"></td><td bgcolor="orchid">CapsuleCollider</td></tr></table></FONT>>] 5}
+#0
+	{node [tooltip="0.071428575",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">0</FONT>>] 12}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 1 -- 12}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 2 -- 12}
+#1
+	{node [tooltip="0.14285715",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">1</FONT>>] 35}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 3 -- 35}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 5 -- 35}
+#2
+	{node [tooltip="0.17857143",width="0,3",height="0,3",shape="diamond",style="filled",color="#006400",label=<<FONT COLOR="#006400">2</FONT>>] 1235}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 12 -- 1235}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 35 -- 1235}
+#3
+	{node [tooltip="0.6607143",width="0,3",height="0,3",shape="diamond",style="filled",color="#8B0000",label=<<FONT COLOR="#8B0000">3</FONT>>] 12354}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 1235 -- 12354}
+	{edge [color="#000000",style="solid",label="",dir="forward"] 4 -- 12354}
+
+}

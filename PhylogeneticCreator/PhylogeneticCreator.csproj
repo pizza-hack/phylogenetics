@@ -8,14 +8,24 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Aspose.SVG" Version="23.12.0" />
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
       <PackageReference Include="csdot" Version="2.0.1" />
+      <PackageReference Include="DotNetGraph" Version="3.0.0" />
       <PackageReference Include="F23.StringSimilarity" Version="5.1.0" />
+      <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
       <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
       <PackageReference Include="ZXing.Net" Version="0.16.8" />
       <PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.10" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Data\NewData\OwnershipNoQ40\Results\" />
+      <Folder Include="Data\ToyTactics\Results\" />
+      <Folder Include="Data\ToyTactics\Small\Results\" />
+      <Folder Include="Data\_SECOND\Genes\" />
+      <Folder Include="Data\_SECOND\Layers\" />
+      <Folder Include="Data\_SECOND\Old\" />
       <Folder Include="XML" />
     </ItemGroup>
 

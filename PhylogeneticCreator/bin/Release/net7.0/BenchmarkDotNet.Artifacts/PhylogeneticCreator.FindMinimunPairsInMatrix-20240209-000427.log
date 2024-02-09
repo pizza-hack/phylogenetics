@@ -1,0 +1,29 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\7484d42d-f751-4b59-acd1-861e94d63978
+// command took 1.21 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\7484d42d-f751-4b59-acd1-861e94d63978
+// command took 2.75 sec and exited with 0
+// ***** Done, took 00:00:04 (4.07 sec)   *****
+// Found 2 benchmarks:
+//   FindMinimunPairsInMatrix.Base: DefaultJob
+//   FindMinimunPairsInMatrix.Immutable: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: FindMinimunPairsInMatrix.Base: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 7484d42d-f751-4b59-acd1-861e94d63978.dll --anonymousPipes 2068 2156 --benchmarkName PhylogeneticCreator.FindMinimunPairsInMatrix.Base --job Default --benchmarkId 0 in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\7484d42d-f751-4b59-acd1-861e94d63978\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 191500.00 ns, 191.5000 us/op

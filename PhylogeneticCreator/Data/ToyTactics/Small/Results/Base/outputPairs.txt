@@ -1,0 +1,5 @@
+;Cube1;Hammer;LightSourceCandles;CameraHolder;Player;
+Cube1_Hammer=0,071428575
+LightSourceCandles_Player=0,14285715
+Cube1^Hammer_LightSourceCandles^Player=0,17857143
+Cube1^Hammer^LightSourceCandles^Player_CameraHolder=0,6607143

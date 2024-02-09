@@ -1,0 +1,22 @@
+graph G {
+  node [shape=plaintext];
+
+  // Define the node with an HTML-like label as a table
+  tableNode [label=<
+    <table border="0" cellborder="1" cellspacing="0">
+      <tr>
+        <td bgcolor="lightcoral" rowspan="3">Function</td>
+        <td border="0" width="20" height="20"></td> <!-- Empty cell -->
+        <td bgcolor="lightgoldenrodyellow">Q40</td>
+      </tr>
+      <tr>
+        <td border="0" width="20" height="20"></td> <!-- Empty cell -->
+        <td bgcolor="lightsteelblue">Q46</td>
+      </tr>
+      <tr>
+        <td border="0" width="20" height="20"></td> <!-- Empty cell -->
+        <td bgcolor="green">Q54</td>
+      </tr>
+    </table>
+  >];
+}

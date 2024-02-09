@@ -203,12 +203,12 @@ class _OG_PhylogeneticTree
             if (!nodes.ContainsKey(firstHeader))
             {
                 nodes.Add(firstHeader, firstHeader);
-                outputToReturn.AppendLine("\t"+gf.Node(firstHeader,"","octagon","filled","skyblue"));
+                outputToReturn.AppendLine("\t"+gf.Node(firstHeader,"-1",null, "","octagon","filled","skyblue"));
             }
             if (!nodes.ContainsKey(secondHeader))
             {
                 nodes.Add(secondHeader, secondHeader);
-                outputToReturn.AppendLine("\t"+gf.Node(secondHeader,"","octagon","filled","skyblue"));
+                outputToReturn.AppendLine("\t"+gf.Node(secondHeader,"-1", null,"","octagon","filled","skyblue"));
             }
 
             nodes.Add(newHeader, newHeader);
@@ -219,13 +219,13 @@ class _OG_PhylogeneticTree
                 {
                     // A blue color just a little darker than the skyblue
                     string color = "#00bfff";
-                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond","",color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,"-1", null,i.ToString(), "diamond","",color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
                 }
                 else
                 {
                     // Deep red
                     string color = "#8B0000";
-                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "diagonals", color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,"-1", null,i.ToString(), "diamond", "diagonals", color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
                 }
             }
             else
@@ -235,13 +235,13 @@ class _OG_PhylogeneticTree
                     // Green
                     string color = "#006400";
                     // TODO, add comment with currentResult.Value.ToString(CultureInfo.InvariantCulture)
-                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "rounded", color,currentResult.Value.ToString(CultureInfo.InvariantCulture),color));
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,"-1", null,i.ToString(), "diamond", "rounded", color,currentResult.Value.ToString(CultureInfo.InvariantCulture),color));
                 }
                 else
                 {
                     // Deep red
                     string color = "#8B0000";
-                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,i.ToString(), "diamond", "diagonals", color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
+                    outputToReturn.AppendLine("\t"+gf.Node(newHeader,"-1", null,i.ToString(), "diamond", "diagonals", color,currentResult.Value.ToString(CultureInfo.InvariantCulture), color));
                 }
                 
             }

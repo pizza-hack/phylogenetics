@@ -12,34 +12,76 @@ public class XMLToString
     private static string? FirstName;
     private static string? SecondName;
     
-    public static Dictionary<string,object> Run(object filename1, object filename2)
+    public static Dictionary<string,object> Run(object filename1, object filename2, Dictionary<string, int> codeLines, bool parseExclusively = true, bool compareValues = false, float threshold = 0)
     {
-        // If the filename is a Dictionary<string, Dictionary<string, object>> then use the first key
+        // If the filename is a Dictionary<string, object> then use the first key
         // If its a string, use the string
-        FirstName = filename1 is Dictionary<string, Dictionary<string, object>> dict1 ? dict1.Keys.First() : (string) filename1;
-        SecondName = filename2 is Dictionary<string, Dictionary<string, object>> dict2 ? dict2.Keys.First() : (string) filename2;
+        FirstName = filename1 is Dictionary<string, object> ? null : (string) filename1;
+        SecondName = filename2 is Dictionary<string, object> ? null : (string) filename2;
         
         // Minify the XML files (ProjectSourcePath.Value + FolderPath + FirstName)
         // and (ProjectSourcePath.Value + FolderPath + SecondName)
         // Only if they're not Dictionary<string, Dictionary<string, object>>
         // If they are, then they're already minified
-        string path1 = filename1 is not Dictionary<string, Dictionary<string, object>> ? MinifyXML(ProjectSourcePath.Value + FolderPath + FirstName) : null;
-        string path2 = filename2 is not Dictionary<string, Dictionary<string, object>> ? MinifyXML(ProjectSourcePath.Value + FolderPath + SecondName) : null;
+        string path1 = filename1 is not Dictionary<string, object> ? MinifyXML(ProjectSourcePath.Value + FolderPath + FirstName) : null;
+        string path2 = filename2 is not Dictionary<string, object> ? MinifyXML(ProjectSourcePath.Value + FolderPath + SecondName) : null;
 
         // Console.ForegroundColor = ConsoleColor.Blue;
         // // Dont count the lines with only a closing tag (e.g. </node>)
         // Console.WriteLine("Lines in " + FirstName + ": " + File.ReadLines(path1).Count(line => !line.Contains("</")));
         // Console.WriteLine("Lines in " + SecondName + ": " + File.ReadLines(path2).Count(line => !line.Contains("</")));
         // Console.ResetColor();
-        
-        // Set the parser if the file is not a dictionary
-        object parsed1_xml = filename1 is not Dictionary<string, Dictionary<string, object>> ? SetXmlParser(path1) : filename1;
-        object parsed2_xml = filename2 is not Dictionary<string, Dictionary<string, object>> ? SetXmlParser(path2) : filename2;
-        
 
-        var parsed = CompareXmlOutputs(parsed1_xml, parsed2_xml, false, 0);
+        object parsed1_xml;
+        object parsed2_xml;
+        if (parseExclusively)
+        {
+            //DONE: If parseExclusively is true, add the original line counter to the DONE: referenced Tree_XMLParser Dictionary
+            // If the name doesnt contain a ^, then its a file
+            if (FirstName is not null && !FirstName.Contains('^'))
+            {
+                // Add the File.ReadLines(path1).Count(line => !line.Contains("</")) to the codeLines
+                codeLines.Add(FirstName, File.ReadLines(path1).Count(line => !line.Contains("</")));
+            }
 
-        return parsed;
+            if (SecondName is not null && !SecondName.Contains('^'))
+            {
+                // Add the File.ReadLines(path2).Count(line => !line.Contains("</")) to the codeLines
+                codeLines.Add(SecondName, File.ReadLines(path2).Count(line => !line.Contains("</")));
+            }
+
+            // We cant modify the original objects (filename1 and filename2) so we need to create copy them
+            object parsed1 = filename1.Copy();
+            object parsed2 = filename2.Copy();
+        
+            // Set the parser if the file is not a dictionary
+            parsed1_xml = filename1 is not Dictionary<string, object> ? SetXmlParser(path1) : parsed1;
+            parsed2_xml = filename2 is not Dictionary<string, object> ? SetXmlParser(path2) : parsed2;
+        }
+        else
+        {
+            // Set the parser if the file is not a dictionary
+            parsed1_xml = filename1 is not Dictionary<string, object> ? SetXmlParser(path1) : filename1;
+            parsed2_xml = filename2 is not Dictionary<string, object> ? SetXmlParser(path2) : filename2;
+        }
+        
+        var results = CompareXmlOutputs(parsed1_xml, parsed2_xml, compareValues, threshold);
+
+        if (!parseExclusively)
+        {
+            // If the name doesnt contain a ^, then its a file. Add the individual file to the codeLines
+            if (FirstName is not null && !FirstName.Contains('^'))
+            {
+                codeLines.Add(FirstName,results.Item2.Item1.Count + 1);
+            }
+
+            if (SecondName is not null && !SecondName.Contains('^'))
+            {
+                codeLines.Add(SecondName,results.Item2.Item2.Count + 1);
+            }
+        }
+        
+        return results.Item1;
 
     }
     
@@ -110,10 +152,12 @@ public class XMLToString
     /// <returns> Returns the path of the minified XML file </returns>
     public static string MinifyXML(string path)
     {
+        // If path doesnt haev the .xml extension then add it
+        if (!path.EndsWith(".xml")) path += ".xml";
         // Check if the minified file already exists which is the same name but in the Minified folder
         // XML/Filename.xml -> XML/Minified/Filename.xml
-        string minifiedPath = path.Replace(FolderPath, FolderPath + "Minified/");
-        string processedPath = path.Replace(FolderPath, FolderPath + "Processed/");
+        string minifiedPath = path.Replace(FolderPath, FolderPath + "Minified\\");
+        string processedPath = path.Replace(FolderPath, FolderPath + "Processed\\");
         if (File.Exists(minifiedPath)) return minifiedPath;
         if (File.Exists(processedPath)) return processedPath;
         
@@ -248,17 +292,17 @@ public class XMLToString
     /// <param name="compareValues" type="bool"> If true, compare the values of the elements, otherwise only compare the existence of the elements </param>
     /// <param name="threshold" type="int"> Number of differences allowed before the elements are considered different (Levenshtein comparison) </param>
     /// <returns></returns>
-    public static Dictionary<string, object> CompareXmlOutputs(object output1, object output2, bool compareValues = false, int threshold = 0)
+    public static Tuple<Dictionary<string,object>,Tuple<List<string>,List<string>>> CompareXmlOutputs(object output1, object output2, bool compareValues = false, float threshold = 0)
     {
         // If output1 is a List<object> we call XmlParserToDictionary to get the Dictionary<string, object>
         // If output1 is a Dictionary<string, object> we just assign it to fullDict1
         Dictionary<string, object> fullDict1 = output1 is List<object> list1 ? XmlParserToDictionary(list1) : (Dictionary<string, object>)output1;
         Dictionary<string, object> fullDict2 = output2 is List<object> list2 ? XmlParserToDictionary(list2) : (Dictionary<string, object>)output2;
-        
-        // Compare the two dictionaries
-        Dictionary<string, object> commonDict = CompareDictionaries(fullDict1, fullDict2, compareValues, threshold);
 
-        return commonDict;
+        // Compare the two dictionaries
+        var comparisonResults = CompareDictionaries(fullDict1, fullDict2, compareValues, threshold);
+
+        return comparisonResults;
     }
 
     private static Dictionary<string,object> XmlParserToDictionary(List<object> xmlInput, bool debug = false)
@@ -324,8 +368,8 @@ public class XMLToString
         return fullDict;
     }
 
-    private static Dictionary<string,object> CompareDictionaries(Dictionary<string,object> dict1, Dictionary<string,object> dict2, 
-        bool compareValues = false, int threshold = 0, bool debug = false)
+    private static Tuple<Dictionary<string,object>,Tuple<List<string>,List<string>>> CompareDictionaries(Dictionary<string,object> dict1, Dictionary<string,object> dict2,
+        bool compareValues = false, float threshold = 0, bool debug = false)
     {
         Dictionary<string, object> commonDict = new Dictionary<string, object>();
         List<string> commonLines = new List<string>();
@@ -345,47 +389,46 @@ public class XMLToString
         for (int i = 0; i < dict1.Count; i++)
         {
             string key = dict1.Keys.ElementAt(i);
-            
-            if (dict2.ContainsKey(key))
+
+            if (!dict2.ContainsKey(key)) continue;
+            if (debug)
             {
-                if (debug)
-                {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Generic key found in " + FirstName.Remove(FirstName.Length - 4) +"_"+SecondName.Remove(FirstName.Length - 4) + ": " + key);
-                    Console.ResetColor();
-                }
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Generic key found in " + FirstName.Remove(FirstName.Length - 4) +"^"+SecondName.Remove(FirstName.Length - 4) + ": " + key);
+                Console.ResetColor();
+            }
                 
-                // If the key exists in both dictionaries, we move to the inner dictionaries
-                List<object> list1 = (List<object>)dict1[key];
-                List<object> list2 = (List<object>)dict2[key];
+            // If the key exists in both dictionaries, we move to the inner dictionaries
+            List<object> list1 = (List<object>)dict1[key];
+            List<object> list2 = (List<object>)dict2[key];
 
-                // Each dictionary in the list has the same values, we need to compare one dictionary with all the dictionaries in the other list
-                // and if there is a match, we add the line to the commonLines list and remove the dictionary from the list
-                ListOfDictionariesComparison(list1, list2, out var listToDict, out var commonLinesTemp, out var individualLines1Temp, out var individualLines2Temp, 
-                    new CompareHandler(LevenshteinNormalizedCompare),
-                    compareValues, threshold, true);
+            // Each dictionary in the list has the same values, we need to compare one dictionary with all the dictionaries in the other list
+            // and if there is a match, we add the line to the commonLines list and remove the dictionary from the list
+            ListOfDictionariesComparison(list1, list2, out List<object> listToDict, out List<string> commonLinesTemp, 
+                out List<string> individualLines1Temp, out List<string> individualLines2Temp, 
+                new CompareHandler(LevenshteinNormalizedCompare),
+                compareValues, threshold, false);
 
-                // Add the common lines to the commonLines list
-                commonLines.AddRange(commonLinesTemp);
-                // Add the individual lines to the individualLines lists
-                individualLines1.AddRange(individualLines1Temp);
-                individualLines2.AddRange(individualLines2Temp);
+            // Add the common lines to the commonLines list
+            commonLines.AddRange(commonLinesTemp);
+            // Add the individual lines to the individualLines lists
+            individualLines1.AddRange(individualLines1Temp);
+            individualLines2.AddRange(individualLines2Temp);
                 
-                // Add the full original elements to the common dictionary (used for future comparisons keeping the same structure)
-                commonDict.Add(key, listToDict);
+            // Add the full original elements to the common dictionary (used for future comparisons keeping the same structure)
+            commonDict.Add(key, listToDict);
 
-                // Check which list is empty and remove the key from the dictionary
-                if (list1.Count == 0)
-                {
-                    // If the list is empty, remove the key from the dictionary
-                    dict1.Remove(key);
-                    i--;
-                }
-                if (list2.Count == 0)
-                {
-                    // If the list is empty, remove the key from the dictionary
-                    dict2.Remove(key);
-                }
+            // Check which list is empty and remove the key from the dictionary
+            if (list1.Count == 0)
+            {
+                // If the list is empty, remove the key from the dictionary
+                dict1.Remove(key);
+                i--;
+            }
+            if (list2.Count == 0)
+            {
+                // If the list is empty, remove the key from the dictionary
+                dict2.Remove(key);
             }
         }
         
@@ -414,32 +457,34 @@ public class XMLToString
                 Console.WriteLine("Generic key found only in " + SecondName.Remove(FirstName.Length - 4) + ": " + key);
             }
 
-            foreach (Dictionary<string,object> item in (List<object>)dict2[key])
-            {
-                individualLines2.Add(item["__line__"].ToString().Split('\n')[0]);
-            }
+            individualLines2.AddRange(from Dictionary<string, object> item in (List<object>)dict2[key] select item["__line__"].ToString().Split('\n')[0]);
         }
 
-        // Get the number of lines in the commonLines list (each line can contain multiple lines (\n))
-        commonLinesCount = commonLines.Sum(line => line.Split('\n').Length) + 1;
-        Console.ForegroundColor = ConsoleColor.Magenta;
-        Console.WriteLine("Common lines: " + commonLinesCount);
-        // Get the number of lines in the individualLines lists (switch the lists if the dict1 is the smaller dictionary)
-        Console.WriteLine("Individual lines in " + FirstName.Remove(FirstName.Length - 4) + ": " + (switched ? individualLines2.Count : individualLines1.Count));
-        Console.WriteLine("Individual lines in " + SecondName.Remove(SecondName.Length - 4) + ": " + (switched ? individualLines1.Count : individualLines2.Count));
-        Console.ResetColor();
+        if (FirstName != null && SecondName != null)
+        {
+            // Get the number of lines in the commonLines list (each line can contain multiple lines (\n))
+            commonLinesCount = commonLines.Sum(line => line.Split('\n').Length) + 1;
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Common lines between " + FirstName.Remove(FirstName.Length - 4) + "^" + SecondName.Remove(SecondName.Length - 4) + ": " + commonLinesCount);
+            // Get the number of lines in the individualLines lists (switch the lists if the dict1 is the smaller dictionary)
+            Console.WriteLine("Individual lines in " + FirstName.Remove(FirstName.Length - 4) + ": " + (switched ? individualLines2.Count : individualLines1.Count));
+            Console.WriteLine("Individual lines in " + SecondName.Remove(SecondName.Length - 4) + ": " + (switched ? individualLines1.Count : individualLines2.Count));
+            Console.ResetColor();
+        }
 
         // Save the common lines to a file after removing \n and \r
-        // File.WriteAllLines(ProjectSourcePath.Value + FolderPath +FirstName.Remove(FirstName.Length - 4) + "_" + SecondName.Remove(FirstName.Length - 4) + "_commonlines.txt", 
+        // File.WriteAllLines(ProjectSourcePath.Value + FolderPath +FirstName.Remove(FirstName.Length - 4) + "^" + SecondName.Remove(FirstName.Length - 4) + "_commonlines.txt", 
         //     commonLines.Select(line => line.Replace("\n", "").Replace("\r", "")));
         
-        return commonDict;
+        // Return a tuple commonDict and Tuple(individualLines1, individualLines2)
+        // or a tuple commonDict and Tuple(individualLines2, individualLines1) if the dict1 is the smaller dictionary
+        return Tuple.Create(commonDict, switched ? Tuple.Create(individualLines2, individualLines1) : Tuple.Create(individualLines1, individualLines2));
     }
 
     public static void ListOfDictionariesComparison(List<object> dict1, List<object> dict2, out List<object> listToDict,
         out List<string> commonLines, out List<string> individualLines1, out List<string> individualLines2, 
         CompareHandler compareHandler,
-        bool compareValues = false, int threshold = 0, bool debug = true)
+        bool compareValues = false, float threshold = 0, bool debug = true)
     {
         // Compare each dictionary in the list with all the dictionaries in the other list for a match or the closest match
         // If there is a match, add the line to the commonLines list and remove the dictionary from the list
@@ -465,56 +510,22 @@ public class XMLToString
             {
                 Dictionary<string, object> item2 = (Dictionary<string, object>)dict2[j];
                 // If the dictionaries are the same, add the line to the commonLines list and remove the dictionary from the list
-                if (PureDictionaryComparison(item1, item2, compareHandler, compareValues, threshold, debug))
-                {
-                    listToDict.Add(item1);
-                    commonLines.Add(item1["__line__"].ToString().Split('\n')[0]);
-                    dict1.Remove(item1);
-                    dict2.Remove(item2);
-                    matchFound = true;
+                if (!PureDictionaryComparison(item1, item2, compareHandler, compareValues, threshold, debug)) continue;
+                listToDict.Add(item1);
+                commonLines.Add(item1["__line__"].ToString().Split('\n')[0]);
+                dict1.Remove(item1);
+                dict2.Remove(item2);
+                matchFound = true;
                     
-                    // Since we removed the dictionary from the list, we need to decrease the index
-                    i--;
-                }
-
-                if (debug)
-                {
-                    if (matchFound)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Match found for " + item1["__line__"].ToString().Split('\n')[0]);
-                        Console.ResetColor();
-                    }
-                }
+                // Since we removed the dictionary from the list, we need to decrease the index
+                i--;
             }
-
-            // If there is no match, add the line to the individualLines1 list and remove the dictionary from the list
-            // if (!matchFound)
-            // {
-            //     if (debug)
-            //     {
-            //         Console.ForegroundColor = ConsoleColor.Red;
-            //         Console.WriteLine("No match found for " + item1["__line__"].ToString().Split('\n')[0]);
-            //         Console.ResetColor();
-            //     }
-            //     
-            //     individualLines1.Add(item1["__line__"].ToString().Split('\n')[0]);
-            //     dict1.Remove(item1);
-            //     i--;
-            // }
         }
-        
-        // The leftover dictionaries in the other list are added to the individualLines2 list as __line__ values
-        // foreach (Dictionary<string, object> item in dict2)
-        // {
-        //     individualLines2.Add(item["__line__"].ToString().Split('\n')[0]);
-        // }
-
     }
 
     private static bool PureDictionaryComparison(Dictionary<string, object> dict1, Dictionary<string, object> dict2, 
         CompareHandler compareHandler,
-        bool compareValues = false, int threshold = 0, bool debug = true)
+        bool compareValues = false, float threshold = 0, bool debug = true)
     {
         // Compare each key in the dictionary with all the keys in the other dictionary for a match or the closest match
         // If there is a match, compare the values

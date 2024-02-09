@@ -1,0 +1,6 @@
+;GameObject;Transform;MeshFilter;MeshRenderer;BoxCollider;Rigidbody;Light;MonoBehaviour;RectTransform;CanvasRenderer;Canvas;Camera;AudioListener;CapsuleCollider
+Cube1;1;1;1;1;1;0;0;0;0;0;0;0;0;0
+Hammer;1;1;1;1;1;1;0;0;0;0;0;0;0;0
+LightSourceCandles;1;1;1;1;1;1;1;1;0;0;0;0;0;0
+CameraHolder;1;1;0;0;0;0;0;1;1;1;1;1;1;0
+Player;1;1;1;1;0;1;0;1;0;0;0;0;0;1

@@ -1,0 +1,212 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\3b76a7b3-e10e-4014-9d03-d564439556b8
+// command took 1.12 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\3b76a7b3-e10e-4014-9d03-d564439556b8
+// command took 2.65 sec and exited with 0
+// ***** Done, took 00:00:03 (3.86 sec)   *****
+// Found 2 benchmarks:
+//   FindMinimunPairsInMatrix.Base: DefaultJob
+//   FindMinimunPairsInMatrix.Immutable: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: FindMinimunPairsInMatrix.Base: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3b76a7b3-e10e-4014-9d03-d564439556b8.dll --anonymousPipes 2164 2152 --benchmarkName PhylogeneticCreator.FindMinimunPairsInMatrix.Base --job Default --benchmarkId 0 in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\3b76a7b3-e10e-4014-9d03-d564439556b8\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 196000.00 ns, 196.0000 us/op
+WorkloadJitting  1: 1 op, 950972100.00 ns, 950.9721 ms/op
+
+OverheadJitting  2: 1 op, 400.00 ns, 400.0000 ns/op
+WorkloadJitting  2: 1 op, 1434500.00 ns, 1.4345 ms/op
+
+OverheadJitting  3: 16 op, 174000.00 ns, 10.8750 us/op
+WorkloadJitting  3: 16 op, 23525000.00 ns, 1.4703 ms/op
+
+WorkloadPilot    1: 16 op, 22787800.00 ns, 1.4242 ms/op
+WorkloadPilot    2: 32 op, 45191700.00 ns, 1.4122 ms/op
+WorkloadPilot    3: 64 op, 88140500.00 ns, 1.3772 ms/op
+WorkloadPilot    4: 128 op, 178150200.00 ns, 1.3918 ms/op
+WorkloadPilot    5: 256 op, 362623000.00 ns, 1.4165 ms/op
+WorkloadPilot    6: 512 op, 718021600.00 ns, 1.4024 ms/op
+
+OverheadWarmup   1: 512 op, 2200.00 ns, 4.2969 ns/op
+OverheadWarmup   2: 512 op, 1200.00 ns, 2.3438 ns/op
+OverheadWarmup   3: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadWarmup   4: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadWarmup   5: 512 op, 1400.00 ns, 2.7344 ns/op
+OverheadWarmup   6: 512 op, 1300.00 ns, 2.5391 ns/op
+
+OverheadActual   1: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual   2: 512 op, 1500.00 ns, 2.9297 ns/op
+OverheadActual   3: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual   4: 512 op, 1400.00 ns, 2.7344 ns/op
+OverheadActual   5: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual   6: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual   7: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual   8: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual   9: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual  10: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual  11: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadActual  12: 512 op, 1200.00 ns, 2.3438 ns/op
+OverheadActual  13: 512 op, 2000.00 ns, 3.9062 ns/op
+OverheadActual  14: 512 op, 2000.00 ns, 3.9062 ns/op
+OverheadActual  15: 512 op, 1400.00 ns, 2.7344 ns/op
+OverheadActual  16: 512 op, 1200.00 ns, 2.3438 ns/op
+OverheadActual  17: 512 op, 1400.00 ns, 2.7344 ns/op
+OverheadActual  18: 512 op, 1400.00 ns, 2.7344 ns/op
+OverheadActual  19: 512 op, 1500.00 ns, 2.9297 ns/op
+OverheadActual  20: 512 op, 1400.00 ns, 2.7344 ns/op
+
+WorkloadWarmup   1: 512 op, 719583800.00 ns, 1.4054 ms/op
+WorkloadWarmup   2: 512 op, 720561300.00 ns, 1.4073 ms/op
+WorkloadWarmup   3: 512 op, 716107700.00 ns, 1.3986 ms/op
+WorkloadWarmup   4: 512 op, 711828200.00 ns, 1.3903 ms/op
+WorkloadWarmup   5: 512 op, 707125800.00 ns, 1.3811 ms/op
+WorkloadWarmup   6: 512 op, 708552300.00 ns, 1.3839 ms/op
+WorkloadWarmup   7: 512 op, 711010100.00 ns, 1.3887 ms/op
+WorkloadWarmup   8: 512 op, 708700800.00 ns, 1.3842 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 512 op, 709172000.00 ns, 1.3851 ms/op
+WorkloadActual   2: 512 op, 709702200.00 ns, 1.3861 ms/op
+WorkloadActual   3: 512 op, 706353500.00 ns, 1.3796 ms/op
+WorkloadActual   4: 512 op, 697611200.00 ns, 1.3625 ms/op
+WorkloadActual   5: 512 op, 704455900.00 ns, 1.3759 ms/op
+WorkloadActual   6: 512 op, 695815100.00 ns, 1.3590 ms/op
+WorkloadActual   7: 512 op, 704642800.00 ns, 1.3763 ms/op
+WorkloadActual   8: 512 op, 700934200.00 ns, 1.3690 ms/op
+WorkloadActual   9: 512 op, 705042100.00 ns, 1.3770 ms/op
+WorkloadActual  10: 512 op, 706244800.00 ns, 1.3794 ms/op
+WorkloadActual  11: 512 op, 701848300.00 ns, 1.3708 ms/op
+WorkloadActual  12: 512 op, 684284500.00 ns, 1.3365 ms/op
+WorkloadActual  13: 512 op, 683983000.00 ns, 1.3359 ms/op
+WorkloadActual  14: 512 op, 678352000.00 ns, 1.3249 ms/op
+WorkloadActual  15: 512 op, 685864500.00 ns, 1.3396 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 512 op, 709170700.00 ns, 1.3851 ms/op
+WorkloadResult   2: 512 op, 709700900.00 ns, 1.3861 ms/op
+WorkloadResult   3: 512 op, 706352200.00 ns, 1.3796 ms/op
+WorkloadResult   4: 512 op, 697609900.00 ns, 1.3625 ms/op
+WorkloadResult   5: 512 op, 704454600.00 ns, 1.3759 ms/op
+WorkloadResult   6: 512 op, 695813800.00 ns, 1.3590 ms/op
+WorkloadResult   7: 512 op, 704641500.00 ns, 1.3763 ms/op
+WorkloadResult   8: 512 op, 700932900.00 ns, 1.3690 ms/op
+WorkloadResult   9: 512 op, 705040800.00 ns, 1.3770 ms/op
+WorkloadResult  10: 512 op, 706243500.00 ns, 1.3794 ms/op
+WorkloadResult  11: 512 op, 701847000.00 ns, 1.3708 ms/op
+WorkloadResult  12: 512 op, 684283200.00 ns, 1.3365 ms/op
+WorkloadResult  13: 512 op, 683981700.00 ns, 1.3359 ms/op
+WorkloadResult  14: 512 op, 678350700.00 ns, 1.3249 ms/op
+WorkloadResult  15: 512 op, 685863200.00 ns, 1.3396 ms/op
+// GC:  0 0 0 33368 512
+// Threading:  0 0 512
+
+// AfterAll
+// Benchmark Process 4948 has exited with code 0.
+
+Mean = 1.364 ms, StdErr = 0.005 ms (0.38%), N = 15, StdDev = 0.020 ms
+Min = 1.325 ms, Q1 = 1.349 ms, Median = 1.371 ms, Q3 = 1.378 ms, Max = 1.386 ms
+IQR = 0.029 ms, LowerFence = 1.306 ms, UpperFence = 1.422 ms
+ConfidenceInterval = [1.342 ms; 1.385 ms] (CI 99.9%), Margin = 0.021 ms (1.57% of Mean)
+Skewness = -0.67, Kurtosis = 1.83, MValue = 2
+
+// ** Remained 1 (50,0 %) benchmark(s) to run. Estimated finish 2024-02-09 1:03 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: FindMinimunPairsInMatrix.Immutable: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3b76a7b3-e10e-4014-9d03-d564439556b8.dll --anonymousPipes 1256 1280 --benchmarkName PhylogeneticCreator.FindMinimunPairsInMatrix.Immutable --job Default --benchmarkId 1 in C:\Users\danie\Documentos\SVIT\Phylogenetics\PhylogeneticCreator\PhylogeneticCreator\bin\Release\net7.0\3b76a7b3-e10e-4014-9d03-d564439556b8\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 180600.00 ns, 180.6000 us/op
+No Workload Results were obtained from the run.
+// Benchmark Process 15372 has exited with code -1073741819.
+
+// ** Remained 0 (0,0 %) benchmark(s) to run. Estimated finish 2024-02-09 1:03 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\PhylogeneticCreator.FindMinimunPairsInMatrix-report.csv
+  BenchmarkDotNet.Artifacts\results\PhylogeneticCreator.FindMinimunPairsInMatrix-report-github.md
+  BenchmarkDotNet.Artifacts\results\PhylogeneticCreator.FindMinimunPairsInMatrix-report.html
+
+// * Detailed results *
+FindMinimunPairsInMatrix.Base: DefaultJob
+Runtime = .NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 1.364 ms, StdErr = 0.005 ms (0.38%), N = 15, StdDev = 0.020 ms
+Min = 1.325 ms, Q1 = 1.349 ms, Median = 1.371 ms, Q3 = 1.378 ms, Max = 1.386 ms
+IQR = 0.029 ms, LowerFence = 1.306 ms, UpperFence = 1.422 ms
+ConfidenceInterval = [1.342 ms; 1.385 ms] (CI 99.9%), Margin = 0.021 ms (1.57% of Mean)
+Skewness = -0.67, Kurtosis = 1.83, MValue = 2
+-------------------- Histogram --------------------
+[1.319 ms ; 1.391 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+FindMinimunPairsInMatrix.Immutable: DefaultJob
+Runtime = .NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.13.12, Windows 10 (10.0.19045.3930/22H2/2022Update)
+Intel Core i7-10750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK 7.0.304
+  [Host]     : .NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.7 (7.0.723.27404), X64 RyuJIT AVX2
+
+
+| Method    | Mean     | Error     | StdDev    | Allocated |
+|---------- |---------:|----------:|----------:|----------:|
+| Base      | 1.364 ms | 0.0215 ms | 0.0201 ms |      65 B |
+| Immutable |       NA |        NA |        NA |        NA |
+
+Benchmarks with issues:
+  FindMinimunPairsInMatrix.Immutable: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - Windows Defender (windowsdefender://)
+        - McAfee VirusScan (C:\Program Files\McAfee.com\Agent\mcupdate.exe)
+Use InProcessEmitToolchain or InProcessNoEmitToolchain to avoid new process creation.
+
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:21 (21.93 sec), executed benchmarks: 2
+
+Global total time: 00:00:26 (26.1 sec), executed benchmarks: 2
+// * Artifacts cleanup *
+Artifacts cleanup is finished
